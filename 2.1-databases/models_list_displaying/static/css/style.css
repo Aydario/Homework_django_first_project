@@ -1,14 +1,21 @@
-.header {
-    margin-top: 30px;
-    margin-bottom: 150px;
+/* Добавляем в конец файла */
+.pager {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 20px 0;
+    margin: 30px 0 0;
+    border-top: 1px solid #eee;
 }
 
-.footer {
-    margin-top: 150px;
-    font-size: 24px;
+.pager li a {
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
-.book {
-    margin-top: 30px;
-    margin-bottom: 30px;
+.pager li a:hover {
+    background-color: #f5f5f5;
 }
