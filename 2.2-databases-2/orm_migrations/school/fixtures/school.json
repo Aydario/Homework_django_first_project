@@ -1,0 +1,53 @@
+[
+{
+  "model": "school.teacher",
+  "pk": 1,
+  "fields": {
+    "name": "Карякин Владимир Владимирович",
+    "subject": "Математика"
+  }
+},
+{
+  "model": "school.teacher",
+  "pk": 2,
+  "fields": {
+    "name": "Наумин Анатолий Андреевич",
+    "subject": "Рус язык"
+  }
+},
+{
+  "model": "school.teacher",
+  "pk": 3,
+  "fields": {
+    "name": "Филатова Елена Александровна",
+    "subject": "Физика"
+  }
+},
+{
+  "model": "school.student",
+  "pk": 1,
+  "fields": {
+    "name": "Бабаева Вера Ивановна",
+    "teachers": [1],
+    "group": "8А"
+  }
+},
+{
+  "model": "school.student",
+  "pk": 2,
+  "fields": {
+    "name": "Погорелов Денис Витальевич",
+    "teachers": [3],
+    "group": "8А"
+  }
+},
+{
+  "model": "school.student",
+  "pk": 3,
+  "fields": {
+    "name": "Осипов Иван Вячеславович",
+    "teachers": [3],
+    "group": "8Б"
+  }
+}
+]
