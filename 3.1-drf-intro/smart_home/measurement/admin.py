@@ -13,3 +13,4 @@ class MeasurementAdmin(admin.ModelAdmin):
     list_filter = ['sensor', 'created_at']
     search_fields = ['sensor__name']
     date_hierarchy = 'created_at'
+    

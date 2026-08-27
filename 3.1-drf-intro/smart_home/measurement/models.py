@@ -40,3 +40,4 @@ class Measurement(models.Model):
     class Meta:
         verbose_name = 'Измерение'
         verbose_name_plural = 'Измерения'
+        

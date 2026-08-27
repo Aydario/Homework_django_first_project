@@ -79,8 +79,8 @@ DATABASES = {
         'NAME': 'm2m_relations',
         # 'HOST': '127.0.0.1',
         # 'PORT': '5432',
-        'USER': 'postgres',
-        'PASSWORD': 'qwertyhjklz09871234',
+        'USER': 'USER',
+        'PASSWORD': 'PASSWORD',
     }
 }
 
