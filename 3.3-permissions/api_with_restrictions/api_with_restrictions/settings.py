@@ -76,7 +76,15 @@ TEMPLATES = [
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.TokenAuthentication',
-    ]
+    ],
+    'DEFAULT_THROTTLE_CLASSES': [
+        'rest_framework.throttling.AnonRateThrottle',
+        'rest_framework.throttling.UserRateThrottle',
+    ],
+    'DEFAULT_THROTTLE_RATES': {
+        'anon': '10/minute',  # 10 запросов в минуту для анонимов
+        'user': '20/minute',  # 20 запросов в минуту для авторизованных
+    }
 }
 
 WSGI_APPLICATION = 'api_with_restrictions.wsgi.application'
@@ -89,6 +97,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'netology_classified_ads',
+        'USER': 'postgres',  # добавьте имя пользователя
+        'PASSWORD': 'postgres',  # добавьте пароль
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
